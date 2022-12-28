@@ -86,9 +86,15 @@ ax.set_ylabel('Stats [arb. units]')
 ax.set_xlabel('Time [years]')
 
 
+# Save figures as PDFs
+from matplotlib.backends.backend_pdf import PdfPages
+pdfsav_Fig_= PdfPages("bar_plot.pdf")
+pdfsav_Fig_.savefig(Fig,dpi =250)
+pdfsav_Fig_.close()
+
+ 
 # Display
 plt.show()
- 
  
  
  
